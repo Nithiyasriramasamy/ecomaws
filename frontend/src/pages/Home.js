@@ -65,7 +65,7 @@ const Home = () => {
           Welcome to MERN Store
         </h1>
         <p className="text-gray-600 text-lg">
-          Discover amazing products at great prices
+          Discover amazing products at nithiya sri
         </p>
       </div>
 
