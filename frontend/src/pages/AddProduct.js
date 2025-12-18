@@ -45,7 +45,7 @@ const AddProduct = () => {
         imageUrl: formData.imageUrl.trim()
       };
 
-      await axios.post('http://localhost:5000/api/products', productData);
+      await axios.post('https://ecomaws-1.onrender.com/api/products', productData);
       
       alert('Product added successfully!');
       
