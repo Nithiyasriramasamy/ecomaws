@@ -15,7 +15,7 @@ const Buy = () => {
   // Fetch cart items
   const fetchCartItems = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/cart');
+      const response = await axios.get('https://ecomaws-1.onrender.com/api/cart');
       setCartItems(response.data);
     } catch (error) {
       console.error('Error fetching cart items:', error);
@@ -55,7 +55,7 @@ const Buy = () => {
     try {
       // In a real application, you would send order data to backend
       // For this demo, we'll just clear the cart and show success
-      await axios.delete('http://localhost:5000/api/cart');
+      await axios.delete('https://ecomaws-1.onrender.com/api/cart');
       setOrderPlaced(true);
       setCartItems([]);
     } catch (error) {
