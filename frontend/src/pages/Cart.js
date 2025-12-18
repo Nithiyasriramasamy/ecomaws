@@ -11,7 +11,7 @@ const Cart = () => {
   const fetchCartItems = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/cart');
+      const response = await axios.get('https://ecomaws-1.onrender.com/api/cart');
       setCartItems(response.data);
       setError('');
     } catch (error) {
