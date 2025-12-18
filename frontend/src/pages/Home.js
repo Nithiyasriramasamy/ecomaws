@@ -11,7 +11,7 @@ const Home = () => {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://ecomaws-1.onrender.com/api/products');
       setProducts(response.data);
       setError('');
     } catch (error) {
