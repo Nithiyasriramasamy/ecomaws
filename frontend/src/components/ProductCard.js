@@ -12,7 +12,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         quantity: 1
       };
 
-      await axios.post('http://localhost:5000/api/cart', cartItem);
+      await axios.post('https://ecomaws-1.onrender.com/api/cart', cartItem);
       
       if (onAddToCart) {
         onAddToCart();
